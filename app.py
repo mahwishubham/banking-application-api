@@ -316,7 +316,7 @@ def delete_account(account_id):
 
 @app.route('/')
 def homepage():
-    return 'Welcome to Flask WebServer'
+    return 'Welcome to Banking Application'
 
 
 @app.route('/customers', methods=["GET", "POST"])
@@ -371,6 +371,7 @@ def customer_account(customer_id, account_id):
     elif request.method == "DELETE":
         res = delete_account(account_id)
         return res
+
 
 @app.route('/accounts')
 def accounts():
