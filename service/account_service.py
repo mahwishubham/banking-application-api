@@ -31,7 +31,7 @@ class AccountService:
 
         # Method #1, use a for loop and do it manually
         list_of_account_dictionaries = []
-        for account_obj in list_of_account_objects:
+        for account_obj in list_of_customer_account_objects:
             list_of_account_dictionaries.append(account_obj.to_dict())
 
         return list_of_account_dictionaries
